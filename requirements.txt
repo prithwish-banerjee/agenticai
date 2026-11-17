@@ -3,3 +3,4 @@ agno
 groq
 python-dotenv
 duckduckgo-search
+youtube-transcript-api
