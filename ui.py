@@ -2,6 +2,13 @@
 import streamlit as st
 from youtube_analyzer import build_youtube_agent
 
+import os
+
+# Load Groq API key from Streamlit Secrets
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+
+from youtube_analyzer import build_youtube_agent
 # ---------------- PAGE CONFIG ----------------
 
 st.set_page_config(
