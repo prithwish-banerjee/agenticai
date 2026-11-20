@@ -19,5 +19,5 @@ def build_agent():
     )
 
 agent = build_agent()
-
-agent.print_response("is it safe to travel iran in 2024?")
+res=input("Enter your question: ")
+agent.print_response(res, stream=True)
